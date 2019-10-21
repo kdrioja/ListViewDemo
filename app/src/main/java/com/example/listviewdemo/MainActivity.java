@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 // aparent is the entire listView
                 //counts items starting form 0 and given in position
                 Log.i("Name of member", myFamily.get(position));
+                Toast.makeText(getApplicationContext(), "Hello " + myFamily.get(position), Toast.LENGTH_LONG).show();
             }
         });
     }
